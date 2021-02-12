@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./bundle.css">
+    <script src="./bundle.js" defer></script>
+</head>
+<body>
+    <main class="game">
+        <div class="container game__container">
+            <div class="game__controls">
+                <h2 class="game__player tooltip-wrapper">Player: <span id="player">&#9812;</span> <div class="tooltip">Current player</div></h2>
+                <div class="game__controls-buttons">
+                    <button class="btn btn--restart tooltip-wrapper" id="restart-btn" data-action="restart">
+                        <i class="fa fa-undo"></i>
+                        <span class="tooltip">restart game</span>
+                    </button>
+                    <button class="btn btn--options tooltip-wrapper" id="option-btn" data-action="toggleOptions">
+                        <i class="fa fa-cog"></i>
+                        <span class="tooltip">Options</span>
+                    </button>
+                </div>
+            </div>
+            <div class="board-wrapper" id="board-wrapper"></div>
+        </div>
+    </main>
+</body>
+</html>

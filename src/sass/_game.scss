@@ -1,0 +1,40 @@
+.game {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mq(768px) {
+            width: 52rem;
+        }
+    }
+
+    &__controls {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    &__player {
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        color: $brown;
+        
+        span {
+            font-size: 1.3em;
+            color: initial;
+        }
+    }
+}
